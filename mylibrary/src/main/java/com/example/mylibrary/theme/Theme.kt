@@ -1,4 +1,4 @@
-package com.example.buttonsecond.ui.theme
+package com.example.mylibrary.theme
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme

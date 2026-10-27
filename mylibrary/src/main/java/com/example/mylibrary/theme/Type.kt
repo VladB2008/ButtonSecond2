@@ -1,4 +1,4 @@
-package com.example.buttonsecond.ui.theme
+package com.example.mylibrary.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

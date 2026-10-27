@@ -24,4 +24,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "ButtonSecond"
 include(":app")
- 
+include(":mylibrary")
