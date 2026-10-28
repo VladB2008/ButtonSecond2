@@ -13,7 +13,7 @@ val PurpleGrey40 = Color(0xFF625b71)
 val Pink40 = Color(0xFF7D5260)
 
 
-val HomeSreen = Brush.linearGradient(listOf(
+val HomeScreen = Brush.linearGradient(listOf(
     Color(0xFFFF6480),
     Color(0xFFF22E63)
 )

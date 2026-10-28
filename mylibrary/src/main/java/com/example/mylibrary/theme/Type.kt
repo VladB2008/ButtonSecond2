@@ -1,11 +1,21 @@
 package com.example.mylibrary.theme
 
+
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.sp
+import com.example.mylibrary.R
 
+val PoppinsFontFamily = FontFamily(
+
+    Font(R.font.pb, weight = FontWeight.Bold),
+           Font(R.font.pl, weight = FontWeight.Normal)
+
+)
 // Set of Material typography styles to start with
 val Typography = Typography(
     bodyLarge = TextStyle(
@@ -14,7 +24,7 @@ val Typography = Typography(
         fontSize = 16.sp,
         lineHeight = 24.sp,
         letterSpacing = 0.5.sp
-    )
+    ),
     /* Other default text styles to override
     titleLarge = TextStyle(
         fontFamily = FontFamily.Default,
@@ -31,4 +41,12 @@ val Typography = Typography(
         letterSpacing = 0.5.sp
     )
     */
+    titleLarge = TextStyle(
+        fontFamily = PoppinsFontFamily,
+fontWeight = FontWeight(700),
+        fontSize = 14.sp,
+        lineHeight = 14 .sp,
+        letterSpacing = 0 .sp,
+        textAlign = TextAlign.Center    // Выравнивание по центру
+    )
 )

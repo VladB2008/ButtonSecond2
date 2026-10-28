@@ -5,7 +5,7 @@ plugins {
 android {
     namespace = "com.example.mylibrary"
     compileSdk {
-        version = release(34)
+        version = release(37)
     }
 
     defaultConfig {
