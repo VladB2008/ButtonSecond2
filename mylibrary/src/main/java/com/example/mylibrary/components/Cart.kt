@@ -5,7 +5,6 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.shape.AbsoluteRoundedCornerShape
 import androidx.compose.material3.Card
-import androidx.compose.material3.CardColors
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
@@ -17,13 +16,12 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.mylibrary.R
+import com.example.mylibrary.theme.ButtonSecondTheme
 import com.example.mylibrary.theme.HomeScreen // Ваш градиент
-import com.example.mylibrary.theme.PoppinsFontFamily // Ваш шрифт
 
 @Composable
 fun Cart(
@@ -51,12 +49,14 @@ modifier: Modifier = Modifier
                 ) {
                     Text(
                         text1,
-                        color = Color.White
+                        color = Color.White,
+                        style = MaterialTheme.typography.bodyLarge
                     )
                     Spacer(Modifier.height(14.dp))
                     Text(
                         text2,
-                        color = Color.White
+                        color = Color.White,
+                        style = MaterialTheme.typography.displaySmall
                     )
                     Spacer(Modifier.weight(1f))
 
@@ -87,33 +87,25 @@ modifier: Modifier = Modifier
 @Composable
 fun CartOften() {
 
-Column(
-    Modifier
-        .fillMaxSize()
-        .padding(horizontal = 16.dp),
-    verticalArrangement = Arrangement.spacedBy(20.dp, Alignment.CenterVertically),
-    horizontalAlignment = Alignment.CenterHorizontally,
+    ButtonSecondTheme {
 
-){
-    Cart(
-        "Schedule",
-        "Easily schedule event/games then find like minded players for battle. You up for it?",
-        {},
-        image = R.drawable.onesreen
-    )
+        Column(
+            Modifier
+                .fillMaxSize()
+                .padding(horizontal = 16.dp),
+            verticalArrangement = Arrangement.spacedBy(20.dp, Alignment.CenterVertically),
+            horizontalAlignment = Alignment.CenterHorizontally,
 
-    Cart(
-        "Schedule",
-        "Easily schedule event/games then find like minded players for battle. You up for it?",
-        {},
-        image = R.drawable.onesreen
-    )
+            ){
+            Cart(
+                "Schedule",
+                "Easily schedule event/games then find like minded players for battle. You up for it?",
+                {},
+                image = R.drawable.onesreen
+            )
 
-    Cart(
-        "Schedule",
-        "Easily schedule event/games then find like minded players for battle. You up for it?",
-        {},
-        image = R.drawable.onesreen
-    )
-}
+
+        }
+    }
+
 }
