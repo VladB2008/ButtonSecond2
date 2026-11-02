@@ -35,9 +35,9 @@ fun Select(
     onClick: ()->Unit,
     modifier: Modifier = Modifier
 ) {
-
+Box() {
     Column(
-        modifier = modifier.fillMaxSize() ,
+        modifier = modifier.fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
@@ -45,19 +45,22 @@ fun Select(
         Column(
             modifier = Modifier,
         ) {
-            Text(text, color = Color(0xFFFA5075), fontSize = 8.sp)
+            Text(text, color = Color(0xFFFA5075),
+                style = MaterialTheme.typography.labelSmall
+            )
             Spacer(modifier.height(10.dp))
 
             Row(
 
                 verticalAlignment = Alignment.CenterVertically
             ) {
-                Text(text2, color = Color.Black, fontSize = 20.sp)
+                Text(text2, color = Color.Black,
+                    style = MaterialTheme.typography.titleLarge)
                 Spacer(modifier = modifier.width(20.dp))
                 Icon(
                     painter = painterResource(id = R.drawable.dropdown),
                     contentDescription = "",
-                    modifier = Modifier.size(12.dp),
+                    modifier = Modifier.size(8.dp),
                     tint = Color(0xFFFA5075)
                 )
 
@@ -65,7 +68,7 @@ fun Select(
         }
 
     }
-
+}
 }
 
 @Preview

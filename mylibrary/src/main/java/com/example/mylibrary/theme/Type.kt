@@ -21,7 +21,7 @@ val Typography = Typography(
     bodyLarge = TextStyle(
         fontFamily = FontFamily.Default,
         fontWeight = FontWeight.Normal,
-        fontSize = 16.sp,
+        fontSize = 13.sp,
         lineHeight = 24.sp,
         letterSpacing = 0.5.sp
     ),
@@ -41,12 +41,32 @@ val Typography = Typography(
         letterSpacing = 0.5.sp
     )
     */
+    labelSmall = TextStyle(
+        fontFamily = PoppinsFontFamily,
+fontWeight = FontWeight(500),
+        fontSize = 8.sp,
+
+        letterSpacing = 0.sp,
+        // Выравнивание по центру
+    ),
+
+
     titleLarge = TextStyle(
         fontFamily = PoppinsFontFamily,
-fontWeight = FontWeight(700),
-        fontSize = 14.sp,
-        lineHeight = 14 .sp,
-        letterSpacing = 0 .sp,
-        textAlign = TextAlign.Center    // Выравнивание по центру
+    fontWeight = FontWeight(500),
+    fontSize = 12.sp,
+
+    letterSpacing = 0.sp,
+// Выравнивание по центру
+),
+    displaySmall = TextStyle(
+        fontFamily = PoppinsFontFamily,
+        fontWeight = FontWeight(400),
+        fontSize = 10.sp,
+
+        letterSpacing = (-0.3) .sp,
+// Выравнивание по центру
     )
 )
+
+
